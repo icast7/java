@@ -1,0 +1,3 @@
+jdbc.driver=org.apache.derby.jdbc.ClientDriver
+jdbc.protocol=jdbc:derby://localhost:1527/
+jdbc.database=COREJAVA;create=true

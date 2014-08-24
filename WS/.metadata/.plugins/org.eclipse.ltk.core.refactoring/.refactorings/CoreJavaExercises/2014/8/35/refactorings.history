@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CoreJavaExercises/src/com/core/ex2/db4/ij.properties&apos; to &apos;database.properties&apos;" description="Rename resource &apos;ij.properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/core/ex2/db4/ij.properties" name="database.properties" stamp="1408838749018" updateReferences="true"/>
+</session>

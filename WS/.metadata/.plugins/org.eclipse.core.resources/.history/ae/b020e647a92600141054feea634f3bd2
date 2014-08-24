@@ -1,0 +1,18 @@
+package de.vogella.jersey.todo.client;
+
+import java.net.URI;
+import java.net.URIl
+
+import javax.ws.rs.core.MediaType;
+
+public class Tester {
+
+		public static void main(String[] args){
+			
+		}
+		
+		private static URI getBaseURI(){
+			return UriBuilder.fromUri("http://localhost:8080/de.vogella.jersey.todo");
+		}
+	
+}

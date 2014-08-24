@@ -1,0 +1,26 @@
+package com.core.ex2.networking3;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * @author icastillejos
+ * @version 1
+ * 
+ */
+public class EchoServer {
+	public static void main(String[] args) throws IOException
+	{
+		//Establish the server socket
+		try (ServerSocket s = new ServerSocket(8189))
+		{
+			try (Socket incoming = s.accept()){
+				InputStream inStream = incoming.getInputStream();	
+			}
+		}
+	}
+	
+	
+}

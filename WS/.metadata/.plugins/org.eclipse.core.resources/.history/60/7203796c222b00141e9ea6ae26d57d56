@@ -1,0 +1,20 @@
+Sat Aug 23 16:12:09 PDT 2014 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Sat Aug 23 16:16:04 PDT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0148-0524-2a38-00007db8f8b6 
+on database directory /Users/icastillejos/Documents/mygithub/java/CoreJavaExercises/src/com/core/ex2/db4/db/COREJAVA with class loader sun.misc.Launcher$AppClassLoader@17698cbe 
+Loaded from file:/Users/icastillejos/Documents/mygithub/java/lib/db-derby-10.10.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_67-b01
+user.dir=/Users/icastillejos/Documents/mygithub/java/CoreJavaExercises/src/com/core/ex2/db4/db
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.9.4
+derby.system.home=/Users/icastillejos/Documents/mygithub/java/CoreJavaExercises/src/com/core/ex2/db4/db
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Aug 23 16:20:02 PDT 2014: Shutting down Derby engine
+----------------------------------------------------------------
+Sat Aug 23 16:20:02 PDT 2014:
+Shutting down instance a816c00e-0148-0524-2a38-00007db8f8b6 on database directory /Users/icastillejos/Documents/mygithub/java/CoreJavaExercises/src/com/core/ex2/db4/db/COREJAVA with class loader sun.misc.Launcher$AppClassLoader@17698cbe 
+----------------------------------------------------------------

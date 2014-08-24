@@ -1,0 +1,15 @@
+package com.core.ex2.networking3;
+
+/**
+ * @author icastillejos
+ * @version 1
+ * 
+ */
+public class EchoServer {
+	public static void main(String[] args) throws IOException
+	{
+		
+	}
+	
+	
+}

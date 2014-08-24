@@ -1,0 +1,9 @@
+package de.vogella.jersey.todo.client;
+
+import java.net.URIl
+
+import javax.ws.rs.core.MediaType;
+
+public class Tester {
+
+}

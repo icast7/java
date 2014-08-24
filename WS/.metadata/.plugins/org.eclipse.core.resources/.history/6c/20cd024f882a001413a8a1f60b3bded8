@@ -1,0 +1,39 @@
+package com.core.ex2.networking3;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Properties;
+
+import javax.mail.*;
+
+/**
+ * @author icastillejos
+ * @version 1
+ */
+public class MailTest8 {
+	public static void main(String[] args) throws MessagingException, IOException{
+		Properties props = new Properties();
+		try (InputStream in = Files.newInputStream(Paths.get("mail", "mail.properties"))){
+			props.load(in);
+		}
+
+		List<String> lines = Files.readAllLines(Paths.get(args[0]), Charset.forName("UTF-8"));
+		
+		String from = lines.get(0);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}	
+}

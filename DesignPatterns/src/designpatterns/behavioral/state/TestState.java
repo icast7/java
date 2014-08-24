@@ -100,6 +100,8 @@ public class TestState {
 	public static LocalTest test;
 
 	public static void main(String[] args) {
+		args = new String[1];
+		args[0] = "management";
 		new LocalTest(args[0]);
 	}
 
