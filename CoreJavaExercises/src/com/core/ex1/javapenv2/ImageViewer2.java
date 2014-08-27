@@ -7,7 +7,7 @@ import java.io.File;
 
 import javax.swing.*;
 
-public class ImageViewer {
+public class ImageViewer2 {
 		public static void main(String[] args){
 			EventQueue.invokeLater(new Runnable(){
 				public void run(){

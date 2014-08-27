@@ -1,6 +1,6 @@
 package com.core.ex1.javapenv2;
 
-public class Welcome {
+public class Welcome1 {
 	
 	public static void main(String[] args)
 	{

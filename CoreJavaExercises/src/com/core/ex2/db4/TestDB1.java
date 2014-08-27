@@ -18,7 +18,7 @@ import java.util.Properties;
  * Test JBBC drivers
  * @author icastillejos
  */
-public class TestDB {
+public class TestDB1 {
 	public static void main(String[] args) throws IOException{
 		try {
 			runTest();

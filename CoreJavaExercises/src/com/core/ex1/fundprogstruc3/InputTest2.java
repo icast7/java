@@ -1,8 +1,8 @@
-package com.core.ex1.javapenv2;
+package com.core.ex1.fundprogstruc3;
 
 import java.util.Scanner;
 
-public class InputTest {
+public class InputTest2 {
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 		
