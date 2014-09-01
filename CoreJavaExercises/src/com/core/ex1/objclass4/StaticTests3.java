@@ -1,7 +1,8 @@
 package com.core.ex1.objclass4;
 /**
+ * Demonstrates static methods and fields
+ * 
  * @author icastillejos
- *
  */
 public class StaticTests3 {
 	
