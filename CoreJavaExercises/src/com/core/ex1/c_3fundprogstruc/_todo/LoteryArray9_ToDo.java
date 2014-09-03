@@ -1,0 +1,5 @@
+package com.core.ex1.c_3fundprogstruc._todo;
+
+public class LoteryArray9_ToDo {
+
+}
