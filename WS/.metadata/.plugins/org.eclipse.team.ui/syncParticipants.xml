@@ -8,8 +8,8 @@
 <mappings>
 <resources resourcePath="/CliSrvJSJV" resourceType="4"/>
 <resources resourcePath="/RemoteSystemsTempFiles" resourceType="4"/>
-<resources resourcePath="/de.vogella.jersey.todo" resourceType="4"/>
 <resources resourcePath="/de.vogella.jersey.todo.client" resourceType="4"/>
+<resources resourcePath="/de.vogella.jersey.todo" resourceType="4"/>
 <resources resourcePath="/CoreJavaExercises" resourceType="4"/>
 <resources resourcePath="/Servers" resourceType="4"/>
 </mappings>
