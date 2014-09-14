@@ -1,7 +1,0 @@
-package com.core.ex1.objclass4;
-
-public class EmployeeTest {
-	public static void main(String[] args){
-		
-	}
-}

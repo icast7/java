@@ -1,0 +1,28 @@
+/**
+ * This is the exception packages
+ */
+package com.core.ex1.k11_exception;
+
+/**
+ * @author icastillejos
+ * @version 1.0.0
+ */
+public class StackTraceTest1 {
+	
+	
+	public static int factorial(int n){
+		/**
+		 * Computes the factorial of a number
+		 * */
+		System.out.println("factorial("+ n +"):");
+		Throwable t = new Throwable();
+		StackTraceElement[] frames = t.getStackTrace();
+		
+		
+		int r;
+		if (n<= 1) r=1;
+		else r=n*factorial(n-1);
+		System.out.println("return "+r);
+		return r;
+	}
+}

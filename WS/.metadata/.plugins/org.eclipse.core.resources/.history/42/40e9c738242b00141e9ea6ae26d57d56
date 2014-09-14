@@ -1,5 +1,0 @@
-ij.driver=org.apache.derby.jdbc.ClientDriver
-ij.url=jdbc:derby://localhost:1527/COREJAVA
-ij.database=COREJAVA;create=true
-ij.username=user
-ij.password=pwd

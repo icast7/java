@@ -1,0 +1,18 @@
+/**
+ * This is the exception packages
+ */
+package com.core.ex1.k11_exception;
+
+/**
+ * @author icastillejos
+ * @version 1.0.0
+ */
+public class StackTraceTest1 {
+	
+	
+	public static int factorial(int n){
+		System.out.println("factorial("+ n +"):");
+		int r;
+		return r;
+	}
+}

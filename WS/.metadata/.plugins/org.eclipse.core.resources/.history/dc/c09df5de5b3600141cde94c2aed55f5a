@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.core.ex1.f_6innerclass;
+
+/**
+ * @author icastillejos
+ * @version 1.0.0
+ */
+public class StaticInnerClassTest8 {
+	public static void main(String[] args){
+		
+	}
+}
+
+class ArrayAlg{
+	/**
+	 * Pair of floating pint numbers
+	 * */
+	private double first;
+	private double second;
+	
+	public static class classPair{
+		public Pair(double f, double s){
+			
+		}
+	}
+}

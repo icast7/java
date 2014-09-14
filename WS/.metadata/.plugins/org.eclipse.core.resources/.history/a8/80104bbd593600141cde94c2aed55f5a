@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.core.ex1.f_6innerclass;
+
+/**
+ * Demonstrates anonymus innner classes
+ * @author icastillejos
+ * @version 1.0.0
+ */
+public class AnonymousInnerClassTest7 {
+	public static void main(String[] args){
+		TalkingClock clock = new TalkingClock();
+		clock.start(1000, true);
+	}
+}
