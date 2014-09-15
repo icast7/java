@@ -54,7 +54,7 @@ public class TestDB1 {
 	 * */
 	public static Connection getConnection() throws SQLException, IOException{
 			Properties props = new Properties();
-			try (InputStream in = Files.newInputStream(Paths.get("src/com/core/ex2/db4","database.properties"))) {
+			try (InputStream in = Files.newInputStream(Paths.get("src/com/core/ex2/d_4db","database.properties"))) {
 				props.load(in);
 			}
 			String drivers = props.getProperty("jdbc.drivers");
