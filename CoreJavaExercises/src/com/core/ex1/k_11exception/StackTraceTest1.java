@@ -1,7 +1,7 @@
 /**
  * This is the exception packages
  */
-package com.core.ex1.k11_exception;
+package com.core.ex1.k_11exception;
 
 import java.util.Scanner;
 

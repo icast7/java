@@ -1,4 +1,4 @@
-package com.core.ex1.j10_deploy;
+package com.core.ex1.j_10deploy;
 // Had to make the folder structure match the package, easiest way to test it was remoing the package name
 
 
