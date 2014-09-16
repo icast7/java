@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.core.ex1.k11_exception;
+package com.core.ex1.k_11exception;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
