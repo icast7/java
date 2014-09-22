@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syncparticipants>
-<participant displayName="Git (CliSrvJSJV, R...cises, Servers)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1410672284582">
+<participant displayName="Git (CoreJavaExercises/src/com/core/ex1/j_10deploy)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1411362990884">
 <data forceFetch="false" root="false">
-<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="CliSrvJSJV, R...cises, Servers" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="CoreJavaExercises/src/com/core/ex1/j_10deploy" startupAction="none">
 <org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
 <org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
 <mappings>
-<resources resourcePath="/CliSrvJSJV" resourceType="4"/>
-<resources resourcePath="/RemoteSystemsTempFiles" resourceType="4"/>
-<resources resourcePath="/de.vogella.jersey.todo.client" resourceType="4"/>
-<resources resourcePath="/de.vogella.jersey.todo" resourceType="4"/>
-<resources resourcePath="/CoreJavaExercises" resourceType="4"/>
-<resources resourcePath="/Servers" resourceType="4"/>
+<resources resourcePath="/CoreJavaExercises/src/com/core/ex1/j_10deploy" resourceType="2"/>
 </mappings>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
-<gitSynchronizeData container="/Users/icastillejos/Documents/mygithub/java/WS/CliSrvJSJV" dstRev="refs/heads/master" inludeLocal="true" srcRev="HEAD"/>
+<gitSynchronizeData container="/Users/icastillejos/Documents/mygithub/java/WS/CliSrvJSJV" dstRev="MERGE_HEAD" inludeLocal="true" srcRev="HEAD">
+<includedPaths>
+<path path="/Users/icastillejos/Documents/mygithub/java/CoreJavaExercises/src/com/core/ex1/j_10deploy"/>
+</includedPaths>
+</gitSynchronizeData>
 </data>
 </participant>
 </syncparticipants>
