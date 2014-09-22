@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.core.ex1.l_generics;
+
+/**
+ * @author icastillejos
+ */
+public class PairTest1 {
+	public static  void main(String[] args){
+		String[] words = {"Mary", "had", "a", "little", "wolf"};
+		
+	}
+}
+
+class ArrayAlg{
+	
+	public static Pair<String> minmax(String[] a){
+		String min = a[0];
+		String max = a[0];
+		
+		return new Pair<String, String>(min, max);
+	}
+}

@@ -1,0 +1,5 @@
+package com.core.ex1.l_generics;
+
+public class Pair {
+
+}
