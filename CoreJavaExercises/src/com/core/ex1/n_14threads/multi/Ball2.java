@@ -1,11 +1,11 @@
-package com.core.ex1.n_14threads;
+package com.core.ex1.n_14threads.multi;
 
 import java.awt.geom.*;
 
 /**
  * A ball that moves ad bounces
  * */
-public class Ball {
+public class Ball2 {
 	private static final int XSIZE = 15;
 	private static final int YSIZE = 15;
 	private double x = 0;
