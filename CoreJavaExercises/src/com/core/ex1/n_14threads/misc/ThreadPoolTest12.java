@@ -1,4 +1,4 @@
-package com.core.ex1.n_14threads.future;
+package com.core.ex1.n_14threads.misc;
 
 import java.io.*;
 import java.util.*;
