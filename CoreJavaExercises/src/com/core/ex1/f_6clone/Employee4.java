@@ -15,6 +15,11 @@ public class Employee4 implements Cloneable {
 	private double salary;
 	private Date hireDay;
 	
+	public Employee4(String name){
+		this.name = name;
+		this.hireDay = new Date();
+	}
+	
 	public Employee4(String name, double salary){
 		this.name = name;
 		this.salary = salary;
