@@ -1,0 +1,10 @@
+package netty.Discard;
+
+
+/**
+ * Discards incoming data
+ * @author icastillejos
+ */
+public class DiscardServer {
+
+}

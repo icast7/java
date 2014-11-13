@@ -1,0 +1,9 @@
+package netty.EchoClient;
+
+public class EchoClient {
+
+/**
+ * Send msg and echo back
+ * */	
+	
+}

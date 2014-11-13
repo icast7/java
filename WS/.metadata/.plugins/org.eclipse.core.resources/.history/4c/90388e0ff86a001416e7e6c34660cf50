@@ -1,0 +1,29 @@
+package netty.EchoClient;
+
+import io.netty.bootstrap.Bootstrap;
+import io.netty.channel.EventLoopGroup;
+import io.netty.channel.nio.NioEventLoopGroup;
+
+/**
+ * Send msg and echo back
+ * */	
+public final class EchoClient {
+	
+		static final boolean SSL = System.getProperty("ssl") != null;
+		
+		public static void main(String[] args) throws Exception{
+			//Configure ssl
+			final SslContext sslCtx;
+			
+			//Configure client
+			EventLoopGroup group = new NioEventLoopGroup();
+			try {
+				
+			} finally {
+				//Shut down event - terminate all threads
+				group.shutdownGracefully();
+			}
+		}
+	}
+	
+}

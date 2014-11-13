@@ -1,0 +1,16 @@
+package netty.Time;
+
+public class TimeClient {
+	public static void main(String[] args) throws Exception{
+		String host =  args[0];
+		int port = Integer.parseInt(args[1]);
+		
+		EventLoopGroup workerGroup = new NioEventLoopGroup();
+		
+		try {
+			
+		} finally {
+			
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package netty.EchoClient;
+
+public class EchoClient {
+
+/**
+ * Send msg and echo back
+ * */	
+	public final class EchoClient{
+		static final boolean SSL = System.getProperty("ssl") != null;
+	}
+	
+}
