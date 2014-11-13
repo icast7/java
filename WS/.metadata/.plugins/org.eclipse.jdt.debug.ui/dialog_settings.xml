@@ -11,4 +11,6 @@
 			<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
+	<section name="conditionHistory">
+	</section>
 </section>

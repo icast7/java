@@ -1,0 +1,12 @@
+package de.vogella.jersey.jaxb.model;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Todo2 {
+	
+	private String summary;
+	private String description;
+	
+	
+}

@@ -11,7 +11,6 @@ import com.sun.jersey.api.client.config.DefaultClientConfig;
 public class Test {
 
 	public static void main(String[] args) {
-		int x = 0;
 		
 		ClientConfig config = new DefaultClientConfig();
 		Client client = Client.create(config);
@@ -25,11 +24,20 @@ public class Test {
 
 		System.out.println(service.path("rest").path("todo")
 				.accept(MediaType.APPLICATION_XML).get(String.class));
+		
+		System.out.println(service.path("rest").path("todo2")
+				.accept(MediaType.TEXT_XML));
+
+		System.out.println(service.path("rest").path("todo2")
+				.accept(MediaType.APPLICATION_JSON).get(String.class));
+
+		System.out.println(service.path("rest").path("todo2")
+				.accept(MediaType.APPLICATION_XML).get(String.class));
 
 	}
 
 	private static URI getBaseURI() {
-		return UriBuilder.fromUri(
+		return 	UriBuilder.fromUri(
 				"http://localhost:8080/de.vogella.jersey.jaxb").build();
 	}
 }

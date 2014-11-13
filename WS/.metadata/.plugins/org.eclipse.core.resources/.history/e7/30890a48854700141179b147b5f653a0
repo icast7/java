@@ -1,0 +1,18 @@
+package com.core.ex1.n_14threads.future;
+
+import java.util.Scanner;
+
+public class FutureTest11 {
+	
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter base directory (e.g. /usr/local/jdk5.0/src):::");
+		String directory = in.nextLine();
+		System.out.print("Enter keyword (e.g. test):");
+		String keyword = in.nextLine();
+		
+		MatchCounter counter = new MatchCounter(new File(directory), keyword);
+	}
+}
+
+class MatchCounter();

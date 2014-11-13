@@ -1,0 +1,5 @@
+package de.vogella.jersey.jaxb;
+
+public class TodoResource2 {
+
+}
