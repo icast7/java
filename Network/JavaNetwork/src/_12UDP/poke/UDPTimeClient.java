@@ -1,8 +1,10 @@
-package _12UDP;
+package _12UDP.poke;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Date;
+
+import _12UDP.poke.UDPPoke;
 
 public class UDPTimeClient {
 	public final static int PORT = 37;
