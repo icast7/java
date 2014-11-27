@@ -10,7 +10,7 @@ import java.nio.channels.Selector;
 import java.util.Iterator;
 import java.util.Set;
 
-public class UDOEchoClientWithChannels {
+public class UDPEchoClientWithChannels {
 	//public final static int PORT = 7;
 	public final static int PORT = 5007;
 	private final static int LIMIT = 100;
