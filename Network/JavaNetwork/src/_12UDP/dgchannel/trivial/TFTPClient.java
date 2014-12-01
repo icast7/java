@@ -1,4 +1,4 @@
-package _12UDP.dgchannel;
+package _12UDP.dgchannel.trivial;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -10,19 +10,29 @@ import java.nio.channels.Selector;
 import java.util.Iterator;
 import java.util.Set;
 
-public class UDPEchoClientWithChannels {
+import _12UDP.dgchannel.trivial.util.PacketType;
+import _12UDP.dgchannel.trivial.util.TransferMode;
+import _12UDP.dgchannel.trivial.util.packet.DATAPacket;
+import _12UDP.dgchannel.trivial.util.packet.TFTPPacket;
+import _12UDP.dgchannel.trivial.util.packet.XRQPacket;
+
+public class TFTPClient {
 	//public final static int PORT = 7;
 	public final static int PORT = 5007;
-	private final static int LIMIT = 100;
+	
+	private final static int LIMIT = 3;
+	private final static int BUFFER_SIZE = 1024;
 	
 	public static void main(String[] args){
+		String hostname = "localhost";
 		SocketAddress remote;
 		try {
-			String server = (args.length > 0) ? (args[0]):("localhost");
-			remote = new InetSocketAddress(server, PORT);
+			if (args.length > 0)
+				hostname = args[0];
+				
+			remote = new InetSocketAddress(hostname, PORT);
 		} catch (RuntimeException ex){
 			System.err.println("Usage: java UDPEchoClientWithChannels host");
-			ex.printStackTrace();
 			return;
 		}
 		
@@ -32,15 +42,16 @@ public class UDPEchoClientWithChannels {
 			
 			Selector selector = Selector.open();
 			channel.register(selector, SelectionKey.OP_READ | SelectionKey.OP_WRITE);
+			ByteBuffer buffer = ByteBuffer.allocate(BUFFER_SIZE);
 			
-			ByteBuffer buffer = ByteBuffer.allocate(4);
+			
 			int n = 0;
 			int numbersRead = 0;
 			while (true){
 				if (numbersRead == LIMIT) 
 					break;
 				//Wait 60 secs for a connection
-				selector.select(600000);
+				selector.select(60000);
 				Set<SelectionKey> readyKeys = selector.selectedKeys();
 				if (readyKeys.isEmpty() && n == LIMIT){
 					//All packets written and not expecting anymore
@@ -54,17 +65,33 @@ public class UDPEchoClientWithChannels {
 						if (key.isReadable()){
 							buffer.clear();
 							channel.read(buffer);
-							buffer.flip();
-							int echo = buffer.getInt();
-							System.out.println("Read: "+ echo);
+							//Build received packet
+							TFTPPacket p = TFTPPacket.getReceivedPacket(buffer);
+							switch (p.getPacketType()){
+								case DATA:
+									String o = new String(((DATAPacket)p).getData(), "US-ASCII");
+									System.out.println(((DATAPacket)p).getBlockNumber() + "|||" + o);
+								case ACK:
+									String os = new String(((DATAPacket)p).getData(), "US-ASCII");
+									System.out.println(((DATAPacket)p).getBlockNumber() + "|||" + os);
+								case ERROR:
+									
+								default:	
+							}
+							
 							numbersRead ++;
 						}
 						if (key.isWritable()){
 							buffer.clear();
-							buffer.putInt(n);
+							
+							XRQPacket x = new XRQPacket(PacketType.RRQ, "test.txt", TransferMode.NETASCII);
+
+							buffer.put(x.getArray());
+							
+							
 							buffer.flip();
 							channel.write(buffer);
-							System.out.println("Wrote: " + n);
+							System.out.println("Wrote: " + buffer.capacity());
 							n++;
 							if (n == LIMIT){
 								////All packets written and not expecting anymore
@@ -78,6 +105,8 @@ public class UDPEchoClientWithChannels {
 			System.out.println("Echoed " + numbersRead + " out of " + LIMIT + " sent");
 			System.out.println("Success rate: " +  100.0 * numbersRead/LIMIT + "%");
 		} catch (IOException ex) {
+			System.err.println(ex);
+		} catch (Exception ex){
 			System.err.println(ex);
 		}
 	}
