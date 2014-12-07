@@ -29,7 +29,7 @@ import javax.swing.WindowConstants;
 
 public class WhoisGUI extends JFrame {
 	private JTextField searchString = new JTextField(30);
-	private JTextArea names = new JTextArea(11, 80);
+	private JTextArea names = new JTextArea(75, 80);
 	private JButton findButton = new JButton("Find");
 	private ButtonGroup searchIn = new ButtonGroup();
 	private ButtonGroup searchFor = new ButtonGroup();
@@ -89,7 +89,6 @@ public class WhoisGUI extends JFrame {
 		searchFor.add(any);
 		a.add(any);
 		
-		
 		a.add(this.makeRadioButton("Network"));
 		a.add(this.makeRadioButton("Person"));
 		a.add(this.makeRadioButton("Host"));
@@ -98,7 +97,6 @@ public class WhoisGUI extends JFrame {
 		a.add(this.makeRadioButton("Group"));
 		a.add(this.makeRadioButton("Gateway"));
 		a.add(this.makeRadioButton("ASN"));
-		
 		
 		return a;
 	}
@@ -173,31 +171,43 @@ public class WhoisGUI extends JFrame {
 			String searchForLabel = searchFor.getSelection().getActionCommand();
 			String searchInLabel = searchIn.getSelection().getActionCommand();
 			
-			if (searchInLabel.equals("Name")) 
-				group = Whois.SearchIn.NAME;
-			else if (searchInLabel.equals("Mailbox")){
-				group = Whois.SearchIn.MAILBOX;
-			} else if (searchInLabel.equals("Handle")){
-				group = Whois.SearchIn.HANDLE;
+			switch(searchInLabel){
+				case "Name": 
+					group = Whois.SearchIn.NAME;
+					break;
+				case "Mailbox":
+					group = Whois.SearchIn.MAILBOX;
+					break;
+				case "Handle":
+					group = Whois.SearchIn.HANDLE;
+					break;
 			}
 			
 			switch (searchForLabel){
 				case "Network":
 					category = Whois.SearchFor.NETWORK;
+					break;
 				case "Person":
 					category = Whois.SearchFor.PERSON;
+					break;
 				case "Host":
 					category = Whois.SearchFor.HOST;
+					break;
 				case "Domain":
 					category = Whois.SearchFor.DOMAIN;
+					break;
 				case "Organization":
 					category = Whois.SearchFor.ORGANIZATION;
+					break;
 				case "Group":
 					category = Whois.SearchFor.GROUP;
+					break;
 				case "Gateway":
 					category = Whois.SearchFor.GATEWAY;
+					break;
 				case "ASN":
 					category = Whois.SearchFor.ASN;
+					break;
 			}
 			
 			server.setHost(chosenServer.getText());
