@@ -1,9 +1,0 @@
-package de.vogella.jersey.jaxb.client;
-
-public class Test2 {
-
-	public static void main(String[] args){
-		
-		ClientConfig config = new DefaultClientConfig();
-	}
-}

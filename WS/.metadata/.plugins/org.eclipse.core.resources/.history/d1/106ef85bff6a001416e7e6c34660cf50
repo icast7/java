@@ -1,8 +1,0 @@
-package netty.Discard;
-
-import io.netty.channel.ChannelInboundHandlerAdapter;
-
-public class DiscardServerHandler extends ChannelInboundHandlerAdapter{
-
-	
-}

@@ -2,29 +2,36 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="265" key="DIALOG_WIDTH"/>
-		<item value="368" key="DIALOG_Y_ORIGIN"/>
+		<item value="170" key="DIALOG_Y_ORIGIN"/>
+		<item value="422" key="DIALOG_X_ORIGIN"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
-		<item value="825" key="DIALOG_X_ORIGIN"/>
 		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Handler" key="selection"/>
+		<item value="switch" key="selection"/>
 		<list key="findhistory">
-			<item value="handler"/>
-			<item value="echo"/>
-			<item value="Bank8"/>
-			<item value="X"/>
-			<item value="x"/>
+			<item value="switch"/>
+			<item value="sw"/>
+			<item value="25"/>
+			<item value="Mono"/>
+			<item value="context"/>
+			<item value="jboss"/>
+			<item value="connector"/>
+			<item value="proper"/>
 		</list>
 		<list key="replacehistory">
-			<item value="Bank9"/>
-			<item value="Y"/>
-			<item value="y"/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.templates.TemplatePreferencePage$EditTemplateDialog_dialogBounds">
+		<item value="596" key="DIALOG_WIDTH"/>
+		<item value="53" key="DIALOG_Y_ORIGIN"/>
+		<item value="133" key="DIALOG_X_ORIGIN"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

@@ -1,4 +1,2 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Added collectionsssss</message>\n<message>Thread Pool tests</message>\n<message>Added queues and thread pools</message>\n<message>Added first future test</message>\n<message>Added multithreading examples </message>\n<message>Added multithreading example </message>\n<message>Renamed package</message>\n<message>Added ball class</message>\n<message>Synching after merge</message>\n<message>Added generics example </message>\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Removed preferences</message>\n<message>Added inet address</message>\n<message>Added inet address exercise</message>\n<message>Ignored bin folder, added whois GUI</message>\n<message>Added sockets for clients</message>\n<message>Added GUI</message>\n<message>+ sockets</message>\n<message>Synched repo...</message>\n<message>Synched repo</message>\n<message>Added to the readme file...</message>\n</messages>
 eclipse.preferences.version=1
-resourcehistory_graph_split=500,500
-resourcehistory_rev_split=287,709

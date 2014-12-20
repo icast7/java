@@ -1,8 +1,0 @@
-package com.core.ex1.n_14threads.future;
-
-public class FutureTest11 {
-	
-	public static void main(String[] args){
-		Scanner in = new Scanner(System.in);
-	}
-}

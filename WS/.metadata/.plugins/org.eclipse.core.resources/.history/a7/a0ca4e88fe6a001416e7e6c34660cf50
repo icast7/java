@@ -1,5 +1,0 @@
-package netty.Discard;
-
-public class DiscardServerHandler {
-
-}

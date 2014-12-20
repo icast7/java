@@ -1,7 +1,0 @@
-package netty.Time;
-
-public class TimeClient {
-	public static void main(String[] args) throws Exception{
-		
-	}
-}
