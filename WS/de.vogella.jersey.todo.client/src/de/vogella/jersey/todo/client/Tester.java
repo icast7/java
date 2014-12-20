@@ -22,18 +22,18 @@ public class Tester {
 		WebResource service  = client.resource(getBaseURI());
 		//Create one todo
 		Todo todo = new Todo("3","Dedededede");
-		ClientResponse response =  service.path("rest").path("todos").path(todo.getId()).
+		ClientResponse response =  service.path("rest").path("tftp").path(todo.getId()).
 		accept(MediaType.APPLICATION_XML).put(ClientResponse.class, todo);
 		//return code should be 201 == create resource
 		System.out.println(response.getStatus());
 		//Get the Todos
-		System.out.println(service.path("rest").path("todos")
+		System.out.println(service.path("rest").path("tftp")
 				.accept(MediaType.TEXT_XML).get(String.class));
 		//Get JSON for application
-		System.out.println(service.path("rest").path("todos")
+		System.out.println(service.path("rest").path("tftp")
 				.accept(MediaType.APPLICATION_JSON).get(String.class));
 		//Get XML for application
-		System.out.println(service.path("rest").path("todos")
+		System.out.println(service.path("rest").path("tftp")
 				.accept(MediaType.APPLICATION_XML).get(String.class));
 		
 		//Get the todo with id1
@@ -41,15 +41,15 @@ public class Tester {
 				.accept(MediaType.APPLICATION_XML).get(String.class));
 		
 		//Create a todo
-		Form form = new Form();
-		form.add("id", "4");
-		form.add("summary","Demonstration for forms");
-		response = service.path("rest").path("todos").type(MediaType.APPLICATION_FORM_URLENCODED)
-				.post(ClientResponse.class, form);
-		System.out.println("Form response: "+response.getEntity(String.class));
-		//Get ALL
-		System.out.println(service.path("rest").path("todos")
-				.accept(MediaType.APPLICATION_XML).get(String.class));		
+//		Form form = new Form();
+//		form.add("id", "4");
+//		form.add("summary","Demonstration for forms");
+//		response = service.path("rest").path("todos").type(MediaType.APPLICATION_FORM_URLENCODED)
+//				.post(ClientResponse.class, form);
+//		System.out.println("Form response: "+response.getEntity(String.class));
+//		//Get ALL
+//		System.out.println(service.path("rest").path("todos")
+//				.accept(MediaType.APPLICATION_XML).get(String.class));		
 	}
 		
 	private static URI getBaseURI(){
