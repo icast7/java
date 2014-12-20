@@ -43,6 +43,10 @@ public class TodosResource {
 	public List<Todo> getTodos(){
 		List<Todo> todos = new ArrayList<Todo>();
 		todos.addAll(TodoDao.INSTANCE.getModel().values());
+		
+		
+		
+		
 		return todos;
 	}
 	
